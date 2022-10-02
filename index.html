@@ -57,6 +57,23 @@
       defer
     ></script>
     <script src="./main.js" defer></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-243288643-1"
+    ></script>
+
+    <script>
+      var host = window.location.hostname;
+      if (host != "localhost") {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-243288643-1");
+      }
+    </script>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
